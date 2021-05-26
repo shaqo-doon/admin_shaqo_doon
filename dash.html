@@ -4,22 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHAQO DOON ADMIN</title>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--keep it-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>SHAQO DOON ADMIN</title>
 </head>
+
 <body>
-    
-<label>id:</label>
-<label>cbd75085-cd54-44a2-aeee-85a9ba2fc2e1</label>
-    <form action='https://api.shaqodoon.ro/addcompany/' method=POST autocomplete="off">
-        <input type=text name=company placeholder="nume companie">
-        <input type=text name=link placeholder="link spre pagina de cariera">
-        <input type=hidden name='action' value='insert'>
-        <input type=submit value='ACTUALIZEAZA'>
-        </form>
+
+
+
+
 
  <div>
     <button>Genereaza cheia API</button>
  </div>
+
+
+
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+			
+<label>id:</label>
+<label>cbd75085-cd54-44a2-aeee-85a9ba2fc2e1</label>
+
+				<form action="https://api.shaqodoon.ro/login/" class="login100-form validate-form" method="POST">
+					<span class="login100-form-title p-b-26">
+						ADMIN
+					</span>
+
+					<div class="wrap-input100 validate-input" >
+						<input class="input100" type="text" name="company" placeholder="nume companie">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
         
+        
+        
+        
+
+					<div class="wrap-input100 validate-input" name="link" placeholder="link spre pagina de cariera">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						 <input type=hidden name='action' value='insert'>						
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								ACTUALIZEAZA
+							</button>
+						</div>
+					</div>
+
+					<div class="text-center p-t-115">
+						<span class="txt1">
+							Don’t have an account?
+						</span>
+
+						<a class="txt2" href="#">
+							Sign Up
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="js/main.js" type="module"></script>
+
+
 </body>
+
 </html>
