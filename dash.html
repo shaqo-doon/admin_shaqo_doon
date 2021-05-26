@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dash.css">
     <title>SHAQO DOON ADMIN</title>
 </head>
 <body>
-    
-<label>id:</label>
-<label>cbd75085-cd54-44a2-aeee-85a9ba2fc2e1</label>
-    <form action='https://api.shaqodoon.ro/addcompany/' method=POST autocomplete="off">
-        <input type=text name=company placeholder="nume companie">
-        <input type=text name=link placeholder="link spre pagina de cariera">
-        <input type=hidden name='action' value='insert'>
-        <input type=submit value='ACTUALIZEAZA'>
-        </form>
-
- <div>
-    <button>Genereaza cheia API</button>
- </div>
-        
+    <div class="dash-page">
+        <div class="container">
+            <label>id:</label>
+            <label>cbd75085-cd54-44a2-aeee-85a9ba2fc2e1</label>
+                <form action='https://api.shaqodoon.ro/addcompany/' method=POST autocomplete="off">
+                    <input type=text name=company placeholder="nume companie">
+                    <input type=text name=link placeholder="link spre pagina de cariera">
+                    <input type=hidden name='action' value='insert'>
+                    <div class="actualizeaza">
+                        <button type="submit">ACTUALIZEAZA</button>
+                    </div>
+                </form>
+            <div class="api-key">
+                <button>Genereaza cheia API</button>
+            </div>
+        </div> 
+    </div> 
 </body>
 </html>
