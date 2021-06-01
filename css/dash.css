@@ -1,0 +1,23 @@
+.dash-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+.container {
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+}
+input {
+    border-bottom: 2px solid;
+    border-color:black;
+    padding: 10px;
+}
+.actualizeaza {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
