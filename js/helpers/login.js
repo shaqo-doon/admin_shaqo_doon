@@ -26,7 +26,7 @@ loginBtn.addEventListener('click', (e) => {
         .then(response => response.json())
         .then(data => {
             sessionStorage.setItem('token', data.token);
-            window.location.replace("http://127.0.0.1:5500/dash.html");
+            window.location.href = 'dash.html';
         }
         )
         .catch(err => {
