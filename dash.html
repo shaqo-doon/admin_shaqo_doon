@@ -11,11 +11,12 @@
 
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/dash.css">
 	<title>SHAQO DOON ADMIN</title>
 </head>
 
 <body>
-	<script src="js/check-login.js"></script>
+	<script src="js/helpers/check-login.js"></script>
 
 	<div class="limiter">
 		<div class="container-login100">
@@ -24,43 +25,45 @@
 					<span class="login100-form-title p-b-26">
 						ADMIN
 					</span>
-					<div>
-						<label class="text-center p-t-115">id:</label>
-						<label class="text-center p-t-115">cbd75085-cd54-44a2-aeee-85a9ba2fc2e1</label>
+					<div class="show-id">
+						<!-- id care vine din raspuns -->
+						<p class="show-id__text">id:</p>
+						<p class="show-id__id">cbd75085-cd54-44a2-aeee-85a9ba2fc2e1</p>
 					</div>
 					<div class="wrap-input100 ">
-						<input class="input100" type="text" name="company" placeholder="nume companie">
+						<input class="input100 nume-companie" type="text" name="company" placeholder="nume companie">
 					</div>
 
 					<div class="wrap-input100 ">
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<input class="input100" name="link" placeholder="link spre pagina de cariera">
+						<input class="input100 link-joburi" name="link" placeholder="link spre pagina de cariera">
 						<input type=hidden name='action' value='insert'>
 					</div>
 
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
+							<button class="login100-form-btn btn-update">
 								ACTUALIZEAZA
 							</button>
 						</div>
 					</div>
 
 					<div class="text-center p-t-115">
-						<a class="txt2" href="#">
+						<a class="txt2 apikey-btn" href="#">
 							Genereaza cheia API
 						</a>
+						<!-- api key care vine din raspuns (cu numele token) -->
 						<p id="apikey">044e2fb6-4c2c-4700-93a2-674dc50aaf78</p>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="js/main.js" type="module"></script>
+	<!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script> -->
+	<script src="js/dash.js" type="module"></script>
 </body>
 
 </html>

@@ -11,13 +11,18 @@
     overflow: hidden;
     padding: 77px 55px 33px 55px;
 }
-input {
+/* input {
     border-bottom: 2px solid;
     border-color:black;
     padding: 10px;
-}
+} */
 .actualizeaza {
     display: flex;
     width: 100%;
     height: 100px;
+}
+
+.show-id{
+    /* display: flex;
+    align-items: center; */
 }
