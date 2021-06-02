@@ -9,6 +9,7 @@ generateBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
     fetch(generateUrl, {
+        method: 'post',
         headers: {
             token: sessionStorage.getItem('token'),
         }
