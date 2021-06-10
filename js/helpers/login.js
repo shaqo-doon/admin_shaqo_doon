@@ -1,3 +1,5 @@
+import { displayLoginErrorMessage } from './login-error-message.js';
+
 const loginBtn = document.querySelector('.onLogin');
 
 let email = '';
@@ -23,10 +25,16 @@ loginBtn.addEventListener('click', (e) => {
         },
         body: `username=${email}&password=${password}`
     })
-        .then(response => response.json())
+        .then(response => {
+            return response.json()
+        })
         .then(data => {
-            sessionStorage.setItem('token', data.token);
-            window.location.href = 'dash.html';
+            if (data.message === 'success') {
+                sessionStorage.setItem('token', data.token);
+                window.location.href = 'dash.html';
+            } else {
+                displayLoginErrorMessage(data.message)
+            }
         }
         )
         .catch(err => {

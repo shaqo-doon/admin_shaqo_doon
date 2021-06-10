@@ -1,0 +1,5 @@
+.login-error p{
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
